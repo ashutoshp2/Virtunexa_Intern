@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Welcome, User!</h1>
+            <div class="notification-icon" id="notification-icon">
+                <span id="notification-count">3</span>
+                <img src="data:image/png;base64,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" alt="Notifications">
+            </div>
+        </header>
+
+        <section class="widgets">
+            <div class="widget tasks">
+                <h2>Tasks</h2>
+                <ul id="task-list">
+                    <li>Complete project report</li>
+                    <li>Schedule team meeting</li>
+                    <li>Review client feedback</li>
+                </ul>
+                <input type="text" id="new-task" placeholder="Add a new task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <div class="widget messages">
+                <h2>Messages</h2>
+                <ul id="message-list">
+                    <li>New message from John</li>
+                    <li>Reminder: Meeting at 3 PM</li>
+                </ul>
+            </div>
+
+            <div class="widget notifications" id="notifications-widget">
+                <h2>Notifications</h2>
+                <ul id="notification-list">
+                    <li>You have a new notification</li>
+                    <li>System update available</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
